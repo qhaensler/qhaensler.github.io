@@ -1,79 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="robots" content="noindex, nofollow">
-    <title>SDW M1 | Cours #SUPDEWEB</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>SDW M1 | Cours #SUPDEWEB</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Lato');
+
+    html {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 </head>
-<body>
-        <nav class="flex items-center justify-between flex-wrap bg-blue-600 p-6">
-                <div class="flex items-center flex-shrink-0 text-white mr-6">
-                  <div>
-                        <span class="font-semibold text-xl block">SUPPORT DE COURS</span>
-                        <span class="font-light text-l block">#SUPDEWEB Strasbourg</span>
-                  </div>
-                </div>
-                <div class="w-auto block flex-grow flex items-center">
-                  <div class="text-m flex justify-around flex-grow">
-                    <a href="niveau-1.html" class="block mt-4 lg:inline-block lg:mt-0 text-blue-100 hover:text-white ">
-                      ECS / SDW 2
-                    </a>
-                    <a href="niveau-2.html" class="block mt-4 lg:inline-block lg:mt-0 text-blue-100 hover:text-white">
-                      SDW 3
-                    </a>
-                    <a href="#" class="font-bold block mt-4 lg:inline-block lg:mt-0 text-blue-100 hover:text-white">
-                      SDW M1
-                    </a>
-                    <a href="niveau-4.html" class="block mt-4 lg:inline-block lg:mt-0 text-blue-100 hover:text-white">
-                      SDW M2
-                    </a>
-                  </div>
-                </div>
-              </nav>
-              <div class="mt-10 text-center">
-                    <h1 class="font-semibold text-3xl text-blue-600 mt-10">PHP / MySQL</h1>
-                    <h2 class="font-semibold text-xl text-blue-400 mb-10">SDW M1</h2>
-              </div>
 
-              <div class="flex items-center flex-col">
+<body class="bg-gray-100 tracking-wider tracking-normal">
 
-                  <div style="width: 600px; max-width: 90%;"  class="border-r border-b border-t border-l border-gray-400 bg-white rounded-b rounded-t p-4 flex flex-col justify-between leading-normal mb-10">
-                  <div class="mb-2">
-                    <div class="text-gray-600 font-regular text-l">Mercredi 26 février | Cours #1</div>
-                    <div class="text-gray-900 font-bold text-xl">🧱 Les bases du PHP</div>
-                  </div>
-                  <div class="flex items-center">
-                    <div class="text-sm">
-                      <p class="text-gray-1000 font-semibold">Support de cours</p>
-                      <p class="text-gray-800"><a href="fichiers/sdw4_1.pdf" target="_blank">Télécharger le PDF</a></p>
-                      <p class="text-gray-1000 font-semibold">Les logiciels</p>
-                      <p class="text-gray-800"><a href="https://www.mamp.info/en/downloads/" target="_blank">MAMP - Serveur local</a></p>
-                      <p class="text-gray-800"><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code - Editeur de code</a></p>
-                    </div>
-                  </div>
-                </div>
+  <nav id="header" class="fixed w-full z-10 top-0 bg-white border-b border-gray-400">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
+      <div class="pl-4 flex items-center">
+        <svg class="h-5 pr-3 fill-current text-blue-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path
+            d="M0 2C0 .9.9 0 2 0h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm14 12h4V2H2v12h4c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2zM5 9l2-2 2 2 4-4 2 2-6 6-4-4z" />
+        </svg>
+        <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="/">
+          SUPPORT DE COURS
+        </a>
+      </div>
+      <div class="block lg:hidden pr-4">
+        <button id="nav-toggle"
+          class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-purple-500 appearance-none focus:outline-none">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="w-full flex-grow lg:flex  lg:content-center lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 z-20"
+        id="nav-content">
+        <div class="flex-1 w-full mx-auto max-w-sm content-center py-4 lg:py-0">
 
-                <div style="width: 600px; max-width: 90%;"  class="border-r border-b border-t border-l border-gray-400 bg-white rounded-b rounded-t p-4 flex flex-col justify-between leading-normal mb-10">
-                <div class="mb-2">
-                  <div class="text-gray-600 font-regular text-l">Mercredi 04 mars | Cours #2</div>
-                  <div class="text-gray-900 font-bold text-xl">⌨️ Faire un mini-site en PHP</div>
-                </div>
-                <div class="flex items-center">
-                  <div class="text-sm">
-                    <p class="text-gray-1000 font-semibold">Support de cours</p>
-                    <p class="text-gray-800"><a href="fichiers/sdw4_2.pdf" target="_blank">Télécharger le PDF</a></p>
-                    <p class="text-gray-800"><a href="fichiers/tp_mini_site.zip" target="_blank">La correction du TP</a></p>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <ul class="list-reset lg:flex justify-end items-center">
+          <li class="mr-3 py-2 lg:py-0">
+            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:underline py-2 px-4"
+              href="niveau-1.html">ECS / SDW 2</a>
+          </li>
+          <li class="mr-3 py-2 lg:py-0">
+            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:underline py-2 px-4"
+              href="niveau-2.html">SDW 3</a>
+          </li>
+          <li class="mr-3 py-2 lg:py-0">
+            <a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="#">SDW M1</a>
+          </li>
+          <li class="mr-3 py-2 lg:py-0">
+            <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:underline py-2 px-4"
+              href="niveau-4.html">SDW M2</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-              <div style="width: 600px; max-width: 90%;"  class="border-r border-b border-t border-l border-gray-400 bg-white rounded-b rounded-t p-4 flex flex-col justify-between leading-normal mb-10">
-                <div class="mb-2">
-                  <div class="text-gray-600 font-regular text-l">Mercredi 16 mars | Cours #3</div>
-                  <div class="text-gray-900 font-bold text-xl">⚙️ Rendre son site dynamique</div>
-                </div>
-                <!--
+  <div class="container w-full mx-auto px-2 mt-10 pt-2">
+    <div class="mt-10 text-center pb-10">
+      <h1 class="font-sans break-normal text-blue-800 pt-6 text-xl font-bold">PHP / MySQL</h1>
+      <h2 class="font-sans break-normal text-blue-600 pb-2 text-l">SDW M1</h2>
+    </div>
+
+    <div class="flex items-center flex-col">
+
+      <div style="width: 600px; max-width: 90%;"
+        class="border-r border-b border-t border-l border-gray-400 bg-white rounded-b rounded-t p-4 flex flex-col justify-between leading-normal mb-10">
+        <div class="mb-2">
+          <div class="text-gray-600 font-regular text-l">Mercredi 26 février | Cours #1</div>
+          <div class="text-gray-900 font-bold text-xl">🧱 Les bases du PHP</div>
+        </div>
+        <div class="flex items-center">
+          <div class="text-sm">
+            <p class="text-gray-1000 font-semibold">Support de cours</p>
+            <p class="text-gray-800"><a href="fichiers/sdw4_1.pdf" target="_blank">Télécharger le PDF</a></p>
+            <p class="text-gray-1000 font-semibold">Les logiciels</p>
+            <p class="text-gray-800"><a href="https://www.mamp.info/en/downloads/" target="_blank">MAMP - Serveur
+                local</a></p>
+            <p class="text-gray-800"><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code -
+                Éditeur de code</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 600px; max-width: 90%;"
+        class="border-r border-b border-t border-l border-gray-400 bg-white rounded-b rounded-t p-4 flex flex-col justify-between leading-normal mb-10">
+        <div class="mb-2">
+          <div class="text-gray-600 font-regular text-l">Mercredi 04 mars | Cours #2</div>
+          <div class="text-gray-900 font-bold text-xl">⌨️ Faire un mini-site en PHP</div>
+        </div>
+        <div class="flex items-center">
+          <div class="text-sm">
+            <p class="text-gray-1000 font-semibold">Support de cours</p>
+            <p class="text-gray-800"><a href="fichiers/sdw4_2.pdf" target="_blank">Télécharger le PDF</a></p>
+            <p class="text-gray-800"><a href="fichiers/tp_mini_site.zip" target="_blank">La correction du TP</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 600px; max-width: 90%;"
+        class="border-r border-b border-t border-l border-gray-400 bg-white rounded-b rounded-t p-4 flex flex-col justify-between leading-normal mb-10">
+        <div class="mb-2">
+          <div class="text-gray-600 font-regular text-l">Mercredi 16 mars | Cours #3</div>
+          <div class="text-gray-900 font-bold text-xl">⚙️ Rendre son site dynamique</div>
+        </div>
+        <!--
                   <div class="flex items-center">
                     <div class="text-sm">
                       <p class="text-gray-1000 font-semibold">Support de cours</p>
@@ -82,14 +121,15 @@
                     </div>
                   </div>
                 -->
-              </div>
+      </div>
 
-              <div style="width: 600px; max-width: 90%;"  class="border-r border-b border-t border-l border-gray-400 bg-white rounded-b rounded-t p-4 flex flex-col justify-between leading-normal mb-10">
-                <div class="mb-2">
-                  <div class="text-gray-600 font-regular text-l">Mercredi 25 mars | Cours #4</div>
-                  <div class="text-gray-900 font-bold text-xl">🗂 Les bases de données</div>
-                </div>
-                <!--
+      <div style="width: 600px; max-width: 90%;"
+        class="border-r border-b border-t border-l border-gray-400 bg-white rounded-b rounded-t p-4 flex flex-col justify-between leading-normal mb-10">
+        <div class="mb-2">
+          <div class="text-gray-600 font-regular text-l">Mercredi 25 mars | Cours #4</div>
+          <div class="text-gray-900 font-bold text-xl">🗂 Les bases de données</div>
+        </div>
+        <!--
                   <div class="flex items-center">
                     <div class="text-sm">
                       <p class="text-gray-1000 font-semibold">Support de cours</p>
@@ -98,14 +138,15 @@
                     </div>
                   </div>
                 -->
-              </div>
+      </div>
 
-              <div style="width: 600px; max-width: 90%;"  class="border-r border-b border-t border-l border-gray-400 bg-white rounded-b rounded-t p-4 flex flex-col justify-between leading-normal mb-10">
-                <div class="mb-2">
-                  <div class="text-gray-600 font-regular text-l">Mercredi 15 avril | Cours #5</div>
-                  <div class="text-gray-900 font-bold text-xl">💪 TP - Création d'un site</div>
-                </div>
-                <!--
+      <div style="width: 600px; max-width: 90%;"
+        class="border-r border-b border-t border-l border-gray-400 bg-white rounded-b rounded-t p-4 flex flex-col justify-between leading-normal mb-10">
+        <div class="mb-2">
+          <div class="text-gray-600 font-regular text-l">Mercredi 15 avril | Cours #5</div>
+          <div class="text-gray-900 font-bold text-xl">💪 TP - Création d'un site</div>
+        </div>
+        <!--
                   <div class="flex items-center">
                     <div class="text-sm">
                       <p class="text-gray-1000 font-semibold">Support de cours</p>
@@ -114,9 +155,88 @@
                     </div>
                   </div>
                 -->
-              </div>
+      </div>
 
-            </div>
+    </div>
+  </div>
 
+
+  <footer class="bg-white border-t border-gray-400 shadow">
+    <div class="container mx-auto flex py-8">
+      <div class="w-full mx-auto flex flex-wrap">
+        <div class="flex w-full lg:w-1/2 ">
+          <div class="px-8">
+            <h3 class="font-bold text-gray-900">Quentin HAENSLER</h3>
+            <p class="text-gray-600 text-sm">
+              Contact : qhaensler@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    /*Toggle dropdown list*/
+    /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+    var navMenuDiv = document.getElementById("nav-content");
+    var navMenu = document.getElementById("nav-toggle");
+
+    var helpMenuDiv = document.getElementById("menu-content");
+    var helpMenu = document.getElementById("menu-toggle");
+
+    document.onclick = check;
+
+    function check(e) {
+      var target = (e && e.target) || (event && event.srcElement);
+
+
+      //Nav Menu
+      if (!checkParent(target, navMenuDiv)) {
+        // click NOT on the menu
+        if (checkParent(target, navMenu)) {
+          // click on the link
+          if (navMenuDiv.classList.contains("hidden")) {
+            navMenuDiv.classList.remove("hidden");
+          } else {
+            navMenuDiv.classList.add("hidden");
+          }
+        } else {
+          // click both outside link and outside menu, hide menu
+          navMenuDiv.classList.add("hidden");
+        }
+      }
+
+      //Help Menu
+      if (!checkParent(target, helpMenuDiv)) {
+        // click NOT on the menu
+        if (checkParent(target, helpMenu)) {
+          // click on the link
+          if (helpMenuDiv.classList.contains("hidden")) {
+            helpMenuDiv.classList.remove("hidden");
+          } else {
+            helpMenuDiv.classList.add("hidden");
+          }
+        } else {
+          // click both outside link and outside menu, hide menu
+          helpMenuDiv.classList.add("hidden");
+        }
+      }
+
+    }
+
+    function checkParent(t, elm) {
+      while (t.parentNode) {
+        if (t == elm) {
+          return true;
+        }
+        t = t.parentNode;
+      }
+      return false;
+    }
+  </script>
 </body>
+
 </html>
