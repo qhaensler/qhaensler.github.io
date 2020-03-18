@@ -15,7 +15,7 @@ if (!empty($_COOKIE['age'])) {
 
 <?php if (!empty($age) && $age >= 18): ?>
     <!-- Si l'age n'est supérieur ou égal à 18 -->
-    <p>Bienvenu sur le site</p>
+    <p>Bienvenue sur le site</p>
 <?php elseif (!empty($age) && $age < 18): ?>
     <!-- Si l'age n'est inférieur à 18 -->
     <p>Vous n'avez pas l'age requis pour voir le site</p>
